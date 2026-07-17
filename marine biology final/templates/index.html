@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Marine Biology AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <h1>🐠 Marine Biology AI</h1>
+
+    <form id="uploadForm">
+
+        <input type="file" id="image" required>
+        <br><br>
+
+<img
+    id="preview"
+    width="300"
+    style="display:none;border-radius:10px;">
+
+        <br><br>
+
+        <button type="submit">
+            Analyze Image
+        </button>
+
+    </form>
+
+    <hr>
+
+    <h2>Result</h2>
+    <p id="loading" style="display:none;color:#005f99;font-weight:bold;">
+    🔄 Analyzing image... Please wait...
+</p>
+
+    <div id="result"></div>
+   <script src="/static/script.js"></script>
+
+</body>
+
+</html>
